@@ -75,7 +75,7 @@ button{
 	transition: all 2s;
 }
 
-#arrow1, #arrow2, #arrow3, #arrow4{
+#arrow1, #arrow2{
 	position: absolute;
 	top: 0px;
 	background-color: #598392;
@@ -95,14 +95,14 @@ button{
 	left: 20px;
 	animation: arrow2-movement 3s infinite;
 }
-#arrow3{
+/* #arrow3{
 	right: 20px;
 	animation: arrow1-movement 3s infinite;
 }
 #arrow4{
 	left: 20px;
 	animation: arrow2-movement 3s infinite;
-}
+} */
 
 @-webkit-keyframes title-shadow-change{
 	0% {opacity: 0;}
