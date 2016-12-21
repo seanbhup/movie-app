@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Movie App</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+	
+</head>
+<body>
+
+<div id="pages">
+	<div id="page1">
+		<div id="arrow1">Now Playing! >>></div>
+			<div class="container text-center">
+				<div class="row">
+					<div class="search-title">
+						SEARCH SOME STUFF!
+					</div>
+				</div>
+				<div class="row">
+					<form id="movie-form">
+						<select id="search-category" class="selectpicker">
+							<option>Select A Category</option>
+						  	<option>Movie</option>
+						  	<option>TV</option>
+						  	<option>Person</option>
+						  	<option>Multi</option>
+						  	<option>Collection</option>
+						  	<option>Keyword</option>
+						  	<option>Company</option>
+						</select>
+						<input type="text" id="search-name" placeholder="Movie/TV/Etc.">
+						<button type="submit" class="get-search-btn">Search!</button>
+					</form>
+				<div class="row">
+					<div class="col-sm-12" id="search-grid">
+						<!-- SEARCH POSTERS GO HERE -->
+					</div>
+					<!-- <div class="col-sm-12" id="video-link">
+						LINKS GO HERE FOR VIDEO
+						LINK
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="page2">
+		<div id="arrow2"><<< Search!</div>
+		<div id="arrow3">Upcoming! >>></div>
+			<div class="container text-center">
+				<div class="row">
+					<div class="search-title">
+							NOW PLAYING!
+						</div>
+					<div class="col-sm-12" id="movie-grid">
+						<!-- MOVIES GO HERE -->
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="page3">
+		<div id="arrow4"><<< Now Playing!</div>
+			<div class="container text-center">
+				<div class="row">
+					<div class="search-title">
+						UPCOMING!
+					</div>
+				<div class="col-sm-12" id="upcoming-movie-grid">
+					<!-- MOVIES GO HERE -->
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

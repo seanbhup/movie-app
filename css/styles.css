@@ -1,0 +1,159 @@
+body{
+	/* overflow: hidden; */
+	background-color: #598392;
+}
+
+img{
+	width: 105%;
+	height: 410px;
+	margin: 10px;
+	border-radius: 5px;
+	box-shadow: 3px 5px 5px #124559;
+/* 	z-index: -1; */
+
+}
+
+img:hover{
+	transform: scale(1.2);
+	transition: all 1s;
+	z-index: 2;
+	position: relative;
+}
+
+button{
+	height: 50px;
+	font-size: 20px;
+	background-color: #EB8258;
+	color: white;
+	box-shadow: 3px 5px 5px #124559;
+	border: 1px solid #124559;
+}
+
+.search-title{
+	font-size: 50px;
+	margin-bottom: 20px;
+	color: orange;
+	font-weight: bold;
+	text-shadow: 2px 2px 8px #FF0000;
+	animation: title-shadow-change 5s infinite;
+}
+
+.search-title:hover{
+	transform: rotateX(360deg);
+	transition: all 1s;
+}
+
+#search-category{
+	height: 50px;
+	font-size: 20px;
+	color: white;
+	margin-right: 20px;
+	border: 1px solid white;
+	background-color: #124559;
+	box-shadow: 3px 5px 5px #124559;
+}
+
+#search-name{
+	height: 50px;
+	font-size: 20px;
+	color: black;
+	box-shadow: 3px 5px 5px #124559;
+	background-color: #EFF6E0;
+	margin-right: 20px;
+	border: 1px solid #124559;
+}
+
+#pages{
+	/* Make the pages div twice the width of the screen */
+	width: 300vw;
+}
+
+#page1, #page2, #page3{
+	width: 100vw;
+	float: left;
+	position: relative;
+	transition: all 2s;
+}
+
+#arrow1, #arrow2, #arrow3, #arrow4{
+	position: absolute;
+	top: 0px;
+	background-color: #598392;
+	color: black;
+	font-size: 40px;
+	color: #EFF6E0;
+	text-shadow: 2px 2px 8px #FF0000;
+	
+}
+
+#arrow1{
+	right: 20px;
+	animation: arrow1-movement 3s infinite;
+}
+
+#arrow2{
+	left: 20px;
+	animation: arrow2-movement 3s infinite;
+}
+#arrow3{
+	right: 20px;
+	animation: arrow1-movement 3s infinite;
+}
+#arrow4{
+	left: 20px;
+	animation: arrow2-movement 3s infinite;
+}
+
+@-webkit-keyframes title-shadow-change{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes title-shadow-change{
+	0%{
+		text-shadow: 2px 2px 8px #FF0000;
+	}
+	33%{
+		text-shadow: 2px 2px 8px #00FF00;
+	}
+	66%{
+		text-shadow: 2px 2px 8px #0000FF;
+	}
+	100%{
+		text-shadow: 2px 2px 8px #FF00FF;
+	}
+}
+
+@-webkit-keyframes arrow1-movement{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes arrow1-movement{
+	0%{
+		margin-right: 0px;
+	}
+	50%{
+		margin-right: 20px;
+	}
+	100%{
+		margin-right: 0px;
+	}
+}
+
+@-webkit-keyframes arrow2-movement{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes arrow2-movement{
+	0%{
+		margin-left: 0px;
+	}
+	50%{
+		margin-left: 20px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
