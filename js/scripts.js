@@ -2,12 +2,12 @@ $(document).ready(function(){
 	// THE BASE URL FOR ALL API CALLS
 
 	$('#arrow1').click(function(){
-		$('#page1,#page2,#page3').css({
+		$('#page1,#page2').css({
 			"right":"100vw"
 		});
 	})
 	$('#arrow2').click(function(){
-		$('#page1,#page2,#page3').css({
+		$('#page1,#page2').css({
 			"right":"0vw"
 		});
 	})
