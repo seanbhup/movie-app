@@ -21,7 +21,7 @@ $(document).ready(function(){
 	// 		"right":"100vw"
 	// 	});
 	// })
-
+	//
 	$("#movie-form").submit(function(){
 		event.preventDefault();
 
